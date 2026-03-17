@@ -201,6 +201,7 @@ body {
     margin-bottom: 12px;
     border-radius: 12px;
     display: block;
+    transition: 0.4s;
 }
 
 .gallery img:hover {
