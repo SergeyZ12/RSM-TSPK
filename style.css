@@ -372,6 +372,8 @@ height: 14px;
 border: 1px solid red;
 }
 
+
+
 /* плавность */
 .form input {
 transition: 0.3s;
@@ -397,15 +399,3 @@ animation: shake 0.3s;
 100% { transform: translateX(0); }
 }
 
-/* 📱 АДАПТИВ */
-
-@media (max-width: 900px) {
-    .footer-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .footer-right {
-        align-items: center;
-    }
-}
