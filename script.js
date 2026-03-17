@@ -4,10 +4,10 @@ const form = document.querySelector('.form');
 const modal = document.getElementById('successModal');
 const inputs = form.querySelectorAll('input');
 
-// 📱 Находим телефон
+//  Находим телефон
 const phoneInput = [...inputs].find(i => i.placeholder === 'Телефон');
 
-// ===== МАСКА =====
+// ===== Маска =====
 phoneInput.addEventListener('input', () => {
 let value = phoneInput.value.replace(/\D/g, '');
 
@@ -29,7 +29,7 @@ if (value.length >= 9) result += '-' + value.substring(9, 11);
 phoneInput.value = result;
 });
 
-// ===== ВАЛИДАЦИЯ =====
+// ===== Валидация =====
 inputs.forEach(input => {
 input.addEventListener('input', () => validateInput(input));
 });
@@ -59,7 +59,7 @@ return false;
 return true;
 }
 
-// ===== SUBMIT =====
+// ===== Отправить =====
 form.addEventListener('submit', (e) => {
 e.preventDefault();
 
@@ -75,7 +75,7 @@ modal.style.display = 'flex';
 form.reset();
 });
 
-// ===== ЗАКРЫТИЕ МОДАЛКИ =====
+// ===== Закрытие модалки =====
 window.closeModal = function () {
 modal.style.display = 'none';
 };
