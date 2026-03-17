@@ -223,7 +223,6 @@ body {
 }
 
 .form input {
-    font-size: 16px;
     padding: 12px;
     border-radius: 20px;
     border: none;
@@ -355,10 +354,6 @@ body {
     background: black;
     color: white;
     cursor: pointer;
-}
-
-input, textarea {
-    font-size: 16px !important;
 }
 
 .form-group {
