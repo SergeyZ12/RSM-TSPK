@@ -357,19 +357,19 @@ body {
 }
 
 .form-group {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .error {
-font-size: 12px;
-color: red;
-margin-top: 4px;
-height: 14px;
+    font-size: 12px;
+    color: red;
+    margin-top: 4px;
+    height: 14px;
 }
 
 .input-error {
-border: 1px solid red;
+    border: 1px solid red;
 }
 
 /* 📱 АДАПТИВ */
@@ -387,25 +387,39 @@ border: 1px solid red;
 
 /* плавность */
 .form input {
-transition: 0.3s;
+    transition: 0.3s;
 }
 
 /* фокус */
 .form input:focus {
-box-shadow: 0 0 0 2px rgba(0,0,0,0.2);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
 }
 
 /* ошибка */
 .input-error {
-border: 1px solid red;
-animation: shake 0.3s;
+    border: 1px solid red;
+    animation: shake 0.3s;
 }
 
 /* анимация тряски */
 @keyframes shake {
-0% { transform: translateX(0); }
-25% { transform: translateX(-3px); }
-50% { transform: translateX(3px); }
-75% { transform: translateX(-3px); }
-100% { transform: translateX(0); }
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-3px);
+    }
+
+    50% {
+        transform: translateX(3px);
+    }
+
+    75% {
+        transform: translateX(-3px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
